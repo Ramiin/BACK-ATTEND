@@ -12,7 +12,7 @@ const autofillProveedores = require('./src/routes/automatic-post')
 conn
   .sync({ force: true })
   .then(() => {
-    server.listen(7001, () => {
+    server.listen(process.env.DB_PORT, () => {
       console.log(`%s listening at 7001`) // eslint-disable-line no-console
     })
   })
