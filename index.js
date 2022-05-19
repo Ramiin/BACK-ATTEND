@@ -22,7 +22,7 @@ conn
     serviciosDb()
     initialRoles()
     ciudadesDb().then(() => {
-      autofillProveedores()
+      // autofillProveedores()
       console.log('tamo ready')
     })
     //   ciudadesDb()
